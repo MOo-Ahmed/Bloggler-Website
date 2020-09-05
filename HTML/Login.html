@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/jquery.min.js"></script>
+    <link rel="stylesheet" href="../CSS/loginStyles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="../img/logo.png" class="logo" id="icon" />
+            </div>
+
+            <!-- Login Form -->
+            <form method="POST" action="../PHP/processLogin.php">
+                <input type="text" id="login" class="fadeIn second" name="Email" placeholder="login">
+                <input type="text" id="password" class="fadeIn third" name="Password" placeholder="password">
+                <input type="submit" class="fadeIn fourth" value="Log In">
+                <div class="alternate-access">
+                    <label class="input-label">Not registered ?</label>
+                    <a class="btn form-btn btn-red" id="alternate-access" href="index.html#username">Sign up</a>
+                </div>
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
