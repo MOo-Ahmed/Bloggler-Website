@@ -273,6 +273,11 @@
         }
     }
 
+    function getCurrentCairoTime(){
+        date_default_timezone_set('Africa/Cairo');
+        return date('Y-m-d H:i');
+    }
+    
 
     /*
     function isUserRegistered($email, $password){

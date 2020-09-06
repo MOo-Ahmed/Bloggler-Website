@@ -10,7 +10,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title><?php echo $_SESSION["name"] ; ?></title>
+    <title><?php echo $_SESSION["name"]. " -> " . $_SESSION["id"] ; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../JS/jquery.min.js"></script>
     <link href="../JS/popper.min.js" rel="stylesheet">
@@ -78,7 +78,8 @@
         </div>
         <div class="col-6"> 
           <a class="_btn text-white" id="showAllPosts">Show all your posts</a>
-          </div>
+        </div>
+        <input type="hidden" id="session_id" style="display:none" value="<?php echo $_SESSION["id"] ; ?>">
       </div>
       
 
@@ -100,9 +101,7 @@
                 </div>
 
                 <!--Hidden but necessary post data -->
-                <div class="input-group">
-                  <input type="hidden" class="input" name="Date" value=<?php echo date("Y-m-d H:i:s");?>>
-                </div>
+                
                 <div class="input-group">
                   <input type="hidden" class="input" name="UserID" value=<?php echo $_SESSION['id'] ;?>>
                 </div>

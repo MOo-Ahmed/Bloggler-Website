@@ -1,7 +1,8 @@
 <?php 
     require ('db.php');
     $connection = establishConnection();
-    $query = "SELECT User.name as Name , Post.postDate as PostDate , Post.postBody as Body  FROM Post inner join User where User.id = Post.UserID order by Post.postDate desc";
+    $id = $_POST["id"] ;
+    $query = "SELECT User.name as Name , Post.postDate as PostDate , Post.postBody as Body  FROM Post inner join User where User.id = Post.UserID and User.id = '$id' order by Post.postDate desc";
     $result = mysqli_query($connection, $query);
     $data = [];
     if ($result->num_rows > 0) {
