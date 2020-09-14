@@ -10,7 +10,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title><?php echo $_SESSION["name"]. " -> " . $_SESSION["id"] ; ?></title>
+    <title><?php echo $_SESSION["name"] ; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../JS/jquery.min.js"></script>
     <link href="../JS/popper.min.js" rel="stylesheet">

@@ -6,8 +6,12 @@
     --blue-light: #42d3ed ;
     --yellow-light: #f7db90;
     --yellow-solid: #db8400 ;
-    --gradient-color: linear-gradient(to right, var(--blue-solid), var(--blue-light));
     --gradient-color-alt: linear-gradient(to right, var(--blue-light), var(--blue-solid));
+
+    --dark-blue-grad: linear-gradient(-90deg, var(--blue-transparent), var(--blue-solid) );
+    --Rosenna: linear-gradient(to right, #ffafbd, #ffc3a0);
+    --grad-purple: linear-gradient(to right, #40004d , #a400b3);
+    --Decent: linear-gradient(-90deg, #4ca1af, var(--blue-transparent));
 }
 
 .text-white {
@@ -195,8 +199,23 @@ Body {
 .timeline {
     width: 100%;
     background-color:#e6e6ff;
-    border-top: 2px solid #635f5f;
+    border-top: 2px solid #c7c7c7;
     margin: 2rem 0;
+    padding-top: 1rem ;
     min-height: 60vh;
 }
 
+.card.mb-4.mt-1 {
+    border: none;
+    box-shadow: -3px 3px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.bg-Post-Header{
+    background-color: rgb(24, 28, 33);
+}
+
+.card-body{
+    color: rgb(255, 255, 255) !important;
+    background-image: var(--grad-purple) !important;
+    
+}
